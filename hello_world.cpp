@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
-int main()
+int
+main()
 {
-  std::string name; //User's name
-  std::cin >> name; //Enter user's name
-  std::cout << "Hello world from " << name
-                                   << std::endl;  
+  std::string name; //Users name
+  std::cin >> name; //Input users name
+  std::cout << "Hello world from " << name << std::endl;  
   return 0;
-
 }
