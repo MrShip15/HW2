@@ -4,17 +4,17 @@
 1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
 2. Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдущем шаге.
 ```sh
-% mkdir hw02
-% cd hw02
-% echo "# Homework 02" >> README.md
-% git init
-% git commit -m "first commit"
-% git push origin master
+$ mkdir hw02
+$ cd hw02
+$ echo "# Homework 02" >> README.md
+$ git init
+$ git commit -m "first commit"
+$ git push origin master
 ```
 3. Создайте файл `hello_world.cpp` в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу **Hello world** на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку `using namespace std;`.
 4. Добавьте этот файл в локальную копию репозитория.
 ```sh
- % edit hello_world.cpp
+ $ edit hello_world.cpp
  ```
 5. Закоммитьте изменения с *осмысленным* сообщением.
  ```
@@ -34,7 +34,7 @@
  **Note:** *Работать продолжайте с теми же репозиториями, что и в первой части задания.*
  1. В локальной копии репозитория создайте локальную ветку `patch1`.
 ```sh
-% git checkout -b patch1
+$ git checkout -b patch1
 ```
  2. Внесите изменения в ветке `patch1` по исправлению кода и избавления от `using namespace std;`.
  3. **commit**, **push** локальную ветку в удалённый репозиторий.
@@ -46,15 +46,15 @@
 9. В удалённый репозитории выполните  слияние PR `patch1 -> master` и удалите ветку `patch1` в удаленном репозитории.
 10. Локально выполните **pull**.
 ```sh
-% git merge patch1
+$ git merge patch1
 ```
 11. С помощью команды **git log** просмотрите историю в локальной версии ветки `master`.
 ```sh
- % git log
+ $ git log
 ```
 12. Удалите локальную ветку `patch1`.
 ```sh
- % git branch -d patch1
+ $ git branch -d patch1
 ```
 ### Part III
 
